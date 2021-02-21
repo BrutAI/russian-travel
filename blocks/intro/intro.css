@@ -1,4 +1,21 @@
 .intro {
   display: flex;
   flex-direction: column;
+  width: 984px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1080px) {
+  .intro {
+    width: 100%;
+    margin: 0;
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 0 24px;
+  }
 }

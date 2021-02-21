@@ -6,6 +6,17 @@
     "place__title place__website"
     "place__image place__text";
   gap: 48px 40px;
+  width: 984px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1080px) {
+  .place {
+    width: 100%;
+    margin: 0;
+    padding: 0 48px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,10 +26,16 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .place {
+    grid-template-columns: calc((100vw - 768px)/2 + 340px) 1fr;
+    gap: 48px 28px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .place {
-    grid-template-columns: 340px 1fr;
-    gap: 48px 28px;
+    padding: 0 24px;
   }
 }
 
@@ -32,5 +49,11 @@
       "place__image"
       "place__text";
     gap: 32px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place {
+    padding: 0;
   }
 }

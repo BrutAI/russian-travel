@@ -1,7 +1,8 @@
 .header__logo {
   width: 176px;
   height: 52px;
-  background-image: url(header-logo.svg);
+  background-image: url(../../../images/header-logo.svg);
+  /* Переложил, я к сожадению не помню где, наверно на лайвкодинке (не помню), обсуждалось, что если сущность не живет без блока, то ее вставляем в блок, что бы можно было целиком блок перетащить. Или и так и так можно? */
 }
 
 @media screen and (max-width: 425px) {

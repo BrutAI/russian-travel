@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   gap: 16px;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .photo-grid {
+    margin: 0 48px;
+    max-width: calc(100% - 96px);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -13,11 +22,21 @@
 @media screen and (max-width: 768px) {
   .photo-grid {
     gap: 16px;
+    margin: 0 24px;
+    max-width: calc(100% - 48px);
   }
 }
 
 @media screen and (max-width: 631px) {
   .photo-grid {
     gap: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .photo-grid {
+    gap: 12px;
+    margin: 0 16px;
+    max-width: calc(100% - 32px);
   }
 }
